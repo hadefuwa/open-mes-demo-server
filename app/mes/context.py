@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.urls import reverse
 
 from .models import (CustomerOrder, Machine, Product, TestReport, WorkOrder)
@@ -75,3 +76,8 @@ def breadcrumbs(request):
     else:
         return {"breadcrumbs": []}
     return {"breadcrumbs": trail}
+
+
+def project(request):
+    """The repository URL shown in the footer."""
+    return {"project_url": getattr(settings, "MES_PROJECT_URL", "")}

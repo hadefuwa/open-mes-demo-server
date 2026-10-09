@@ -4,6 +4,8 @@
 
 It runs out of the box on **dummy data** for an invented training-equipment maker, so you can click through every feature straight after cloning.
 
+**Try it without installing anything:** the read-only [static demo](https://hadefuwa.github.io/open-mes-demo-static/) runs entirely in your browser. Its source and builder live in the companion repository [open-mes-demo-static](https://github.com/hadefuwa/open-mes-demo-static); this repository is the runnable server.
+
 ## Features
 
 - **Work orders**: Entered → Allocated → Issued → In progress → QA → Complete, with a board, a technician job sheet, a printable work order and QA sign-off.

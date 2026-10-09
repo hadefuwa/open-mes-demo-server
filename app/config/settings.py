@@ -65,6 +65,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'mes.context.alerts',
                 'mes.context.breadcrumbs',
+                'mes.context.project',
             ],
         },
     },
@@ -131,3 +132,6 @@ MES_LABOUR_RATE_PER_HOUR = 28
 # Which data pack `manage.py seed` loads (see mes/datapacks), and where real source workbooks live.
 MES_DATA_PACK = os.environ.get("MES_DATA_PACK", "generic")
 MES_DATA_DIR = Path(os.environ.get("MES_DATA_DIR") or BASE_DIR.parent / "data")
+
+# Where "GitHub" links in the UI point (each repository sets its own).
+MES_PROJECT_URL = "https://github.com/hadefuwa/open-mes-demo-server"
