@@ -9,3 +9,7 @@ Docs/Examples/
 *.xlsx
 *.xlsm
 *.csv
+
+# Collected static files are built by the Dockerfile; keep only the folder itself
+app/staticfiles/*
+!app/staticfiles/.gitkeep
